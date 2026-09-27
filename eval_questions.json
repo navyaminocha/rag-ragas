@@ -1,0 +1,50 @@
+[
+  {
+    "question": "tell different speech separating methods",
+    "ground_truth": "The passages describe several deep learning methods for speech separation:\n\n*   **Deep Learning Methods (General)**: The application of deep learning has received widespread attention for speech separation.\n*   **Time-Domain Methods**: TDANet is an example of a time-domain method that uses an efficient lightweight architecture with top-down attention.\n*   **Time-Frequency Domain Approaches**: TF-GridNet is an example that models both time and frequency dimensions, utilizing bidirectional LSTMs and self-attention mechanisms.\n*   **Band-Split Strategy**: This strategy reduces computational costs by focusing on important frequency bands. It is utilized by models such as TIGER, which also introduces the frequency-frame interleaved (FFI) block composed of multi-scale selective attention (MSA) and full-frequency-frame attention (F3A) to integrate temporal and frequency features. BSRNN also employs a band-split strategy for music separation, with its approach noted as enlightening for speech separation.\n*   **SepFormer**: Mentioned as a model to which TDANet's performance and computational costs are compared.",
+    "reviewed": false,
+    "source": "logged"
+  },
+  {
+    "question": "tell different speech separating techniques",
+    "ground_truth": "The provided passages mention several speech separation techniques and models:\n\n1.  **TIGER**: A novel lightweight separation model that employs a **band-split strategy",
+    "reviewed": false,
+    "source": "logged"
+  },
+  {
+    "question": "what is sentiment analysis",
+    "ground_truth": "Sentiment analysis involves classifying text, such as tweets from social network posts, according to its emotional charge (e.g., positive, negative, or neutral) to reflect market opinions and perceptions. The goal is to determine daily market sentiment by aggregating individual tweet-level classifications, often assigning the majority class of positive or negative tweets to a given day. Some approaches simplify this to a binary sentiment formulation (positive vs. negative) to identify the predominant sentiment, ensuring stability and interpretability.",
+    "reviewed": false,
+    "source": "logged"
+  },
+  {
+    "question": "what is neuronsoup",
+    "ground_truth": "NeuronSoup is a neural computation architecture that replaces traditional synchronous layer-by-layer processing with asynchronous, delay-mediated signal propagation through a pool of shared neurons. It is a task-agnostic architecture that can be applied to various domains, such as image classification, audio classification, and more, by changing the encoder and output neuron count. NeuronSoup uses a genetic algorithm to co-evolve its topology, weights, delays, and connectivity, and it has been shown to achieve 85.9% test accuracy on 10-class MNIST digit classification. The architecture exhibits a structural analog of coarse-to-fine processing hierarchy, where short paths produce early-arriving signals and long paths deliver late-arriving signals that modify the output. NeuronSoup is inspired by biological principles but does not model biological neurons, and its key components include continuous-valued temporal dynamics, evolved topology with state accumulation, and temporal delays as functional parameters.",
+    "reviewed": false,
+    "source": "logged"
+  },
+  {
+    "question": "how is cross validation used in speech enhancement?",
+    "ground_truth": "Cross-validation is not explicitly used in the provided passages for speech enhancement.",
+    "reviewed": false,
+    "source": "logged"
+  },
+  {
+    "question": "what is neuroevolution?",
+    "ground_truth": "Neuroevolution is a method of optimizing neural network architecture through the use of a genetic algorithm, which searches for optimal network configurations through a process of selection and crossover. This approach allows for the simultaneous discovery of both the network topology and parameters, without the constraint of layer-wise structure, and can lead to the emergence of computational structure, such as shared feature detectors and temporal attention-like priority, without explicit architectural engineering. Neuroevolution can operate in a space fundamentally incompatible with backpropagation, achieving computational results such as adaptive computation depth per-sample, lateral interaction between processing pathways, and inference with fewer than 1,100 floating-point operations.",
+    "reviewed": false,
+    "source": "logged"
+  },
+  {
+    "question": "what is digital pantheon?",
+    "ground_truth": "Digital Pantheon refers to a multi-agent framework that uses Large Language Models (LLMs) to simulate and audit coalition formation in political negotiations. It combines Supervised Fine-Tuning (SFT), Direct Preference Optimization (DPO), and Retrieval-Augmented Generation (RAG) to reconcile factual grounding with ideological alignment. The framework is based on a topology called Multi-Layered Information Lineage (MILT), which tracks the origin of each clause in the agreement to its manifesto source. It has been operationalized on the 2019 Flemish election, where party agents engaged in a hub-and-spoke negotiation with a central formateur acting as a neutral broker. The framework has been shown to be effective in simulating coalition formation and identifying the most likely winning party.",
+    "reviewed": false,
+    "source": "logged"
+  },
+  {
+    "question": "what is  Generative Agent-Based Modeling",
+    "ground_truth": "Generative Agent-Based Modeling is a method that combines the strengths of both discriminative and generative approaches to simulate complex systems, such as coalition formation in parliamentary democracy. It does this by integrating the signal fidelity of discriminative modeling with the reconstruction capabilities of generative modeling. This is achieved through the use of a hybrid network that includes a discriminative model, such as TF-GridNet, and a generative model, such as an autoregressive module with spectral mapping. The two outputs are then fused together using a fusion network that adaptively combines their strengths to produce high-quality results with reduced artifacts. This approach is applied to simulate the complex and dynamic process of coalition formation, where parties with diverse interests and ideologies interact and negotiate to form a governing coalition. In the context of political simulation, generative agent-based modeling enables the exploration of different scenarios and the analysis of the complex relationships between parties, allowing for a more nuanced understanding of the coalition formation process.",
+    "reviewed": true,
+    "source": "logged"
+  }
+]

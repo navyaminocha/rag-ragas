@@ -1,0 +1,24 @@
+# --- Core pipeline ---
+PyMuPDF>=1.24.0
+google-generativeai>=0.7.0
+rank-bm25>=0.2.2
+sentence-transformers>=3.0.0
+
+langchain-community<0.4          # pinned BELOW latest deliberately — 0.4.x+ dropped the
+                                  # legacy chat_models.vertexai shim that ragas still hard-imports
+langchain-core>=1.4.9             # fine to float on latest; not the source of the conflict
+langchain-google-genai>=1.0.0         # ragas judge LLM wrapper; matches langchain-community<0.4 generation
+chromadb>=0.5.0
+sentence-transformers>=3.0.0
+rank-bm25>=0.2.2
+openai>=1.0.0
+langchain-openai>=0.3.0 
+streamlit>=1.36.0
+python-dotenv>=1.0.0
+
+# --- Evaluation ---
+ragas>=0.1.9,<0.2.0                      # NOT latest (0.4.3) — 0.4.3 has an unpatched import bug,
+                                   # see github.com/vibrantlabsai/ragas/issues/2745
+mlflow>=2.14.0
+datasets>=2.19.0
+pandas>=2.0.0
